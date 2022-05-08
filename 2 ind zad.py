@@ -1,4 +1,9 @@
 if __name__ == '__main__':
-    s = 'иинформаця'
-    r = s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[0] + s[9]
+    s = input("Введите предложение: ")
+    r = ''
+    for i, x in enumerate(s):
+        if i % 2 == 1:
+            r += str('ы')
+        else:
+            r += x
     print(r)
